@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Paraguay Textil S.A.</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <link href="css/animate.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/miestilo.css" rel="stylesheet" type="text/css"/>
+        <link rel="icon" type="image/png" href="img/favicon.png">
+        <link href="css/animate.min.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+
+        <div class="container cuadro animated zoomIn">
+            <form onsubmit="verificaTarjetaAjax()" id="formTarjeta" action="javascript:void(0);">
+                <div class="centrar">
+                    <img id="logo" src="img/logo-pytil.png" alt=""/>
+                </div>
+
+
+                <div class="input-group input-group-lg">
+                    <span class="input-group-addon" id="sizing-addon1"><span class="glyphicon glyphicon-credit-card" aria-hidden="true"></span></span>
+                    <input id="nrotarjeta" type="password" class="form-control text-center" placeholder="Nº Tarjeta" aria-describedby="sizing-addon1">
+                </div>
+                <div class="reloj">
+                    <div class="date text-center">
+                        <span id="weekDay" class="weekDay"></span>, 
+                        <span id="day" class="day"></span> de
+                        <span id="month" class="month"></span> del
+                        <span id="year" class="year"></span>
+                    </div>
+                    <div class="clock text-center">
+                        <span id="hours" class="hours"></span> :
+                        <span id="minutes" class="minutes"></span> :
+                        <span id="seconds" class="seconds"></span>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div id="cargaEmpleado">
+            
+        </div>
+        <div id="buscado">
+            
+        </div>
+
+
+
+
+        <script src="js/jquery.js" type="text/javascript"></script>
+        <script src="js/moment.js" type="text/javascript"></script>
+        <script src="js/bootstrap.js" type="text/javascript"></script>
+        <script src="js/funciones.js" type="text/javascript"></script>
+        <script src="js/sweetalert2.all.min.js" type="text/javascript"></script>
+        <script src="js/misfunciones.js" type="text/javascript"></script>
+        <script>
+            inicializa();
+        </script>
+    </body>
+
+</html>

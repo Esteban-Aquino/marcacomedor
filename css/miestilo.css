@@ -1,0 +1,90 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 07-may-2021, 11:04:22
+    Author     : esteban.aquino
+*/
+.centrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-image: url("../img/fondo.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.cuadro {
+    margin-top: 12%;
+    max-width: 50%;
+    height: 420px;
+    /*background-color: rgba(179, 208, 255,0.8);*/
+    border: 0;
+    border-radius: 2rem;
+    /*box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.5);*/
+    background-color: rgba(179, 208, 255, 0.3);  
+    backdrop-filter: blur(8px);
+}
+
+.clock, .date {
+    font: 250% sans-serif;
+}
+
+#logo {
+    height: 140px;
+    width: 420px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.reloj {
+    margin-top: 80px;
+}
+
+
+
+#swal2-content {
+    font: 200% sans-serif;
+}
+
+.swal2-show {
+    border-radius: 2rem !important;
+    width:50% !important;
+    height: 50% !important;
+}
+
+.swal2-styled.swal2-confirm {
+    /*height: 200% !important;
+    width: 20% !important;*/
+    font-size: 2em !important;
+}
+
+.manito {
+    cursor: pointer;
+}
+
+.swal-error-comida{
+    background: #C0392B !important;
+    
+}
+
+.swal-error-comida .swal2-content {
+    color: #d4e8f1 !important;
+    
+}
+
+
+.swal-correcto-comida{
+    background:#0C3 !important;
+}
+
+
+.swal-correcto-comida .swal2-content {
+    color: #d4e8f1 !important;
+    
+}

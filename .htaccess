@@ -1,0 +1,6 @@
+RewriteEngine on
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+Rewriterule ^home$ principal.html
+Rewriterule ^login$ index.html
+

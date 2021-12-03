@@ -1,0 +1,6 @@
+RewriteEngine on
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+Rewriterule ^validaTarjeta$ validaTarjeta.php [QSA]
+Rewriterule ^getempleados$ getempleados.php [QSA]
+

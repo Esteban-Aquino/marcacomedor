@@ -1,0 +1,42 @@
+<div id="divModal" class="modal fade" tabindex="-1" role="dialog"
+     aria-labelledby="gridSystemModalLabel">
+    <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" 
+                        aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="gridSystemModalLabel">Seleccione Persona</h4>
+            </div>
+            <div class="modal-body">
+
+                <form id="carga_empleado" class="form-horizontal form-label-left" autocomplete="off">
+                    <div class="row item form-group">
+                        <label class="control-label col-md-2 col-sm-1 col-xs-1" for="cod_empleado">Persona:
+                        </label>
+                        <div class="col-md-2 col-sm-1 col-xs-2" data-toggle="tooltip" title="Presione F9 para buscar">
+                            <input id="cod_empleado" class="form-control col-md-7 col-xs-4" name="cod_empleado"   type="text" >
+                        </div>
+                        <div class="col-md-8 col-sm-1 col-xs-2">
+                            <input id="NOM_EMPLEADO" class="form-control col-md-7 col-xs-4" name="NOM_EMPLEADO"   type="text" readonly="readonly" >
+                        </div>
+                    </div>
+
+                    <!--<div class="row item form-group">
+                        <label class="control-label col-md-2 col-sm-1 col-xs-4" for="OBSERVACION">Observacion:
+                        </label>
+                        <div class="col-md-10 col-sm-3 col-xs-8">
+                            <textarea id="OBSERVACION" class="form-control" name="OBSERVACION" data-parsley-trigger="keyup" data-parsley-maxlength="800" ></textarea>
+                        </div>
+                    </div>-->
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button id="botonCancelarEmpleados" type="button" class="btn btn-default"
+                        data-dismiss="modal">Cancelar</button>
+                <button id="botonGuardar" type="button" class="btn btn-primary" onclick="guardar_empleado()">Guardar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/funciones_carga_empleado.js" type="text/javascript"></script>
